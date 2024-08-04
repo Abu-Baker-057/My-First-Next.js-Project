@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 
+console.log("TODO List Project");
 let todo : string[] = [];
-
 async function create_todo (todo : string[])
 {
     do{
@@ -66,6 +66,7 @@ async function create_todo (todo : string[])
             for(let i = 0; i < size; i++){
                 console.log(`${i+1}. ${todo[i]}`);
             }
+            console.log("Thanks using Todo List");
             break;
         }
     } while (true);
@@ -86,3 +87,4 @@ if(ask.want == 1){
 }else{
     console.log("Invalid value")
 }
+

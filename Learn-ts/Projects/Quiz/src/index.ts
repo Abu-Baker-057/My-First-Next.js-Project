@@ -1,9 +1,6 @@
-// The app will show the students multiple choice questions and promt the user to reply.
-// In the end it will show the students the result of the quiz.
-
 import inquirer from "inquirer";
 
-console.log("WELCOME IN SAFE BROWSER TEST\n");
+console.log("Quiz Project");
 
 let q1 = "1- What is TypeScript primarily used for?";
 let q2 = "2- Which of the following is a TypeScript feature?";
@@ -27,97 +24,94 @@ let q8op = "\nA) Set 'strictNullChecks': true in the tsconfig.json file\nB) Use 
 let q9op = "\nA) Type casting\nB) Type inference\nC) Type checking\nD) Type guarding";
 let q10op = "\nA) 'string'\nB) 'any'\nC) 'object'\nD) 'undefined'";
 
-// 1C, 2A, 3B, 4D, 5A, 6C, 7B, 8D, 9D, 10A
-
 const quiz = await inquirer.prompt([
     {
         type: "list",
         name: "Q1",
-        message: q1+q1op,
+        message: q1 + q1op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q2",
-        message: q2+q2op,
+        message: q2 + q2op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q3",
-        message: q3+q3op,
+        message: q3 + q3op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q4",
-        message: q4+q4op,
+        message: q4 + q4op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q5",
-        message: q5+q5op,
+        message: q5 + q5op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q6",
-        message: q6+q6op,
+        message: q6 + q6op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q7",
-        message: q7+q7op,
+        message: q7 + q7op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q8",
-        message: q8+q8op,
+        message: q8 + q8op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q9",
-        message: q9+q9op,
+        message: q9 + q9op,
         choices: ["A", "B", "C", "D"],
     },
     {
         type: "list",
         name: "Q10",
-        message: q10+q10op,
+        message: q10 + q10op,
         choices: ["A", "B", "C", "D"],
     },
 ])
 
-// 1C, 2A, 3B, 4D, 5A, 6C, 7B, 8D, 9D, 10A
-
 let sum = 0;
-if(quiz.Q1 == "C"){
+if (quiz.Q1 == "C") {
     sum++;
-}if(quiz.Q2 =="A"){
+} if (quiz.Q2 == "A") {
     sum++;
-}if(quiz.Q3 =="B"){
+} if (quiz.Q3 == "B") {
     sum++;
-}if(quiz.Q4 =="D"){
+} if (quiz.Q4 == "D") {
     sum++;
-}if(quiz.Q5 =="A"){
+} if (quiz.Q5 == "A") {
     sum++;
-}if(quiz.Q6 =="C"){
+} if (quiz.Q6 == "C") {
     sum++;
-}if(quiz.Q7 =="B"){
+} if (quiz.Q7 == "B") {
     sum++;
-}if(quiz.Q8 =="D"){
+} if (quiz.Q8 == "D") {
     sum++;
-}if(quiz.Q9 =="D"){
+} if (quiz.Q9 == "D") {
     sum++;
-}if(quiz.Q10 =="A"){
+} if (quiz.Q10 == "A") {
     sum++;
 }
 
-let average = (sum * 100)/ 10
+let average = (sum * 100) / 10;
 
 console.log(`Result = ${average}%`);
 
+console.log("Thanks for try Quiz")
