@@ -5,6 +5,6 @@
 // let f_name = Ali
 
 let favorite: number = 57;
+let message: string = `My Favourite number is ${favorite}`;
 
-console.log("My Favourite number is",favorite);
-console.log(`My Favourite number is ${favorite}`);
+console.log("🚀 ~ message:", message);

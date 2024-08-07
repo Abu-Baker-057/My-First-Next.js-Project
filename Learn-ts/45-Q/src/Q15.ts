@@ -6,3 +6,15 @@
 // • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 
 // • Print a second set of invitation messages, one for each person who is still in your list.
+
+let guest: string[] = ["Ans", "Adil", "Asad", "Kaif", "Zahid", "Sarmad"];
+
+// for(let i = 0; i < guest.length; i++) {
+//     console.log(`Hello ${guest}! Tommorow, you are inivited me`);
+// }
+
+guest.map((items) => {console.log(`Hello ${items}! Tommorow, you are inivited me`)})
+
+console.log(`Sorry! Due to some reasons ${guest[2]} not coming`)
+guest[2] = "Hassan"
+console.log()

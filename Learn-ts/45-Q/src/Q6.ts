@@ -4,11 +4,11 @@
 // Print the name once, so the whitespace around the name is displayed.
 // Then print the name after striping the white spaces.
 
-const name = " Ali Raza "
+const name = " Ali Raza ";
 console.log(name);
 console.log(name.trim());
 
-const name1 = " Ali\tRaza "
+const name1 = " Ali\tRaza ";
 console.log(name1);
 console.log(name1.trim());
 

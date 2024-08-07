@@ -15,6 +15,6 @@ let n2 = person.slice(1).toLowerCase();
 // let n1 = person.substr(0, 1).toUpperCase();
 // let n2 = person.substr(1).toLowerCase();
 
-console.log("This is titlecase:",n1+n2);
+console.log("This is titlecase:", n1 + n2);
 
 export {}

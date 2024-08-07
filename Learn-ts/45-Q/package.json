@@ -1,7 +1,6 @@
 {
-  "name": "ai-assignment",
+  "name": "quiz",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,10 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@types/node": "^20.14.9"
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.8"
   },
   "dependencies": {
-    "inquirer": "^9.3.1"
+    "inquirer": "^9.2.23"
   }
 }
